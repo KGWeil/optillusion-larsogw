@@ -20,6 +20,20 @@ public class Figuren extends PApplet
         size(500, 350); // Festlegen der Fenstergröße
     }        
 
+    public void zeichneQuardrate(int quarate) {
+        for(int i=0;i<quadrate;i++) {
+            int x = 20*i;
+            rectangle(x + 20, 40, 20, 20);
+        }
+    }
+    
+    public void zeichneKreise(int kreise) {
+        for(int i=0;i<kreise;i++) {
+            int size = (kreise - i) * 10;
+            ellipse(100, 100, size, size);
+        }
+    }
+    
     public void zeichneBildC() {
         // Zeichne dir zunächst eine Skizze auf ein Blatt Papier und überlege dir, welche
         // Werte du den Methoden rect(x,y,b,h) und ellipse(x,y,b,h) übergeben musst, 
